@@ -26,7 +26,7 @@ class Test_fblogin(Baseclass):
         self.welementtobeclickable(ls.logoutbutton())
         ls.logoutbutton().click()
 
-    def test_login_invalid(self):
+    def test_log_invalid(self):
         self.driver.get("https://en-gb.facebook.com/")
         lp = login_page(self.driver)
         #print("done")

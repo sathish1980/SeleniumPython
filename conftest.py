@@ -13,7 +13,7 @@ def setup(request):
         prefs = {"profile.default_content_setting_values.notifications" : 2}
         chrome_options.add_experimental_option("prefs",prefs)
         #driver = webdriver.Chrome(chrome_options=chrome_options)
-        driver = webdriver.Chrome("D:\Software\chromedriver_win32\chromedriver.exe",options=chrome_options)
+        driver = webdriver.Chrome("D:\Software\chromedriver_win32_latestVersion\chromedriver.exe",options=chrome_options)
         #  driver = webdriver.Edge("D:\Software\edgedriver_win64_93\msedgedriver.exe")
         driver.maximize_window()
     elif Br_name == "edge":
@@ -39,7 +39,7 @@ def setup_old():
     prefs = {"profile.default_content_setting_values.notifications" : 2}
     chrome_options.add_experimental_option("prefs",prefs)
     #driver = webdriver.Chrome(chrome_options=chrome_options)
-    driver = webdriver.Chrome("D:\Software\chromedriver_win32\chromedriver.exe",options=chrome_options)
+    driver = webdriver.Chrome("D:\Software\chromedriver_win32_latestVersion\chromedriver.exe",options=chrome_options)
     #  driver = webdriver.Edge("D:\Software\edgedriver_win64_93\msedgedriver.exe")
     driver.maximize_window()
     yield

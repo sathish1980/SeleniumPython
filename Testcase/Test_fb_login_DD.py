@@ -16,7 +16,7 @@ class Test_fbloginDD(Baseclass):
         #print("done")
        # lp.username().send_keys(fbloign[0])
        # lp.password().send_keys(fbloign[1])
-        lp.username().send_keys(fbloign["username"])
+        lp.username(fbloign["username"])
         lp.password().send_keys(fbloign["password"])
         lp.login_button().click()
         lp = logout_page(self.driver)
@@ -38,8 +38,7 @@ class Test_fbloginDD(Baseclass):
         for i in range(1,int(value)+1) :
             self.driver.get("https://en-gb.facebook.com/")
             lp = login_page(self.driver)
-            lp.username().clear()
-            lp.username().send_keys(fbloign["username"+str(i)])
+            lp.username(fbloign["username"+str(i)])
             lp.password().clear()
             lp.password().send_keys(fbloign["password"+str(i)])
             lp.login_button().click()
